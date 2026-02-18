@@ -20,6 +20,16 @@ dependencies:
     path: # path to your local package
 ```
 
+**Or via Git:**
+
+```yaml
+dependencies:
+  admob_service:
+    git:
+      url: https://github.com/zianfahrudi/admob-service.git
+      ref: master # Optional: branch, release tag, or commit hash
+```
+
 ### 2. Initialization
 
 Initialize the service in your `main.dart` with your Ad Unit IDs:
