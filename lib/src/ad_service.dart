@@ -28,6 +28,9 @@ class AdService {
   /// Initialize the Mobile Ads SDK with configuration.
   Future<void> initialize(AdConfig config) async {
     _config = config;
+    await MobileAds.instance.updateRequestConfiguration(
+      RequestConfiguration(testDeviceIds: ['A4354D827D54EE6B948B1E10DE27C195']),
+    );
     await MobileAds.instance.initialize();
 
     // Only load ads if showAds is true
